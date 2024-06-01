@@ -1,0 +1,9 @@
+spring:
+    application:
+        name: ubgateway
+server:
+    port: 8888
+
+
+ubregistry:
+    servers: http://localhost:8484
