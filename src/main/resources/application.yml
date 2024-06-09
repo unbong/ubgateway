@@ -7,3 +7,7 @@ server:
 
 ubregistry:
     servers: http://localhost:8484
+
+logging:
+    level:
+      io.unbong: debug

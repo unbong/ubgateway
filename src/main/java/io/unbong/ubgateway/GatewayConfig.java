@@ -13,6 +13,8 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Properties;
 
+import static io.unbong.ubgateway.GatewayPlugin.GATEWAY_PREFIX;
+
 /**
  * gateway config
  *
@@ -36,7 +38,7 @@ public class GatewayConfig {
         return x->{
             SimpleUrlHandlerMapping handlerMapping =applicationContext.getBean(SimpleUrlHandlerMapping.class);
             Properties mappings = new Properties();
-            mappings.put("/ga/**", "gateWayWebHandler");
+            mappings.put(GATEWAY_PREFIX+"/**", "gateWayWebHandler");
             handlerMapping.setMappings(mappings);
             handlerMapping.initApplicationContext();
         };

@@ -1,4 +1,4 @@
-package io.unbong.ubgateway;
+package io.unbong.ubgateway.web.filter;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
@@ -27,7 +27,6 @@ public class GatewayWebFilter implements WebFilter {
         }
 
         String mock = """
-                
                     {"result": "mock"}
                 """;
         return exchange.getResponse()

@@ -1,4 +1,4 @@
-package io.unbong.ubgateway;
+package io.unbong.ubgateway.web.filter;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
